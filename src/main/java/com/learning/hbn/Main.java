@@ -15,7 +15,7 @@ import com.learning.hbn.entity.Student;
 
 	public class Main {
 		public static void main(String[] args) {
-			Student emp = new Student();
+			Student st = new Student();
 
 			SessionFactory sessionFactory = HibernateConfiguration.getSessionFactory();
 
@@ -27,19 +27,19 @@ import com.learning.hbn.entity.Student;
 			
 			
 
-//			session.load(emp, 20);
-//			emp = session.get(Employee.class, 4);
-//			System.out.println(emp);
+//			session.load(st, 20);
+//			st = session.get(Employee.class, 4);
+//			System.out.println(st);
 			
 //			emp.setName("Mahesh");
-//			session.persist(emp);
-//			session.persist(emp2);
+//			session.persist(st);
+//			session.persist(st2);
 //			emp.setId(3);
-//			session.remove(emp);
+//			session.remove(st);
 			
 			tx.commit();
 		}
 
 	}
 
-}
+
